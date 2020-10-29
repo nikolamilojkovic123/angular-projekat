@@ -1,3 +1,12 @@
 <p>servers works!</p>
+<button [disabled]="allowNewServer" (click) ="onCreateSerever()" class="btn btn-primary">Dodavanje dugmee</button>
+<p>{{ serverCreate}}</p>
+
+<!---<label>Server name</label>
+<input type="text"  class ="form-control" (input)="kreirannje($event)"> 
+--->
+
+<!---<p>{{ kreiranServer }}</p> -->
+<p *ngIf="isserverCreate">server je kreiran njegovo ime je {{kreiranServer}}</p>
 <app-server></app-server>
 <app-server></app-server>
